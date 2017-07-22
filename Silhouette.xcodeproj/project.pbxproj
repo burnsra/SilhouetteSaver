@@ -13,6 +13,8 @@
 		0095C5F21F22F2FE001CB8AD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0095C5F11F22F2FE001CB8AD /* MainMenu.xib */; };
 		0095C5F81F22FA7D001CB8AD /* html in Resources */ = {isa = PBXBuildFile; fileRef = 0095C5F71F22FA7D001CB8AD /* html */; };
 		0095C5FA1F22FFCC001CB8AD /* SilhouetteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095C5F91F22FFCC001CB8AD /* SilhouetteController.swift */; };
+		0095C5FE1F230438001CB8AD /* ConfigureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095C5FC1F230438001CB8AD /* ConfigureSheetController.swift */; };
+		0095C5FF1F230438001CB8AD /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0095C5FD1F230438001CB8AD /* ConfigureSheet.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		0095C5F11F22F2FE001CB8AD /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		0095C5F71F22FA7D001CB8AD /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 		0095C5F91F22FFCC001CB8AD /* SilhouetteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilhouetteController.swift; sourceTree = "<group>"; };
+		0095C5FC1F230438001CB8AD /* ConfigureSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureSheetController.swift; sourceTree = "<group>"; };
+		0095C5FD1F230438001CB8AD /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			children = (
 				0095C5FB1F22FFD2001CB8AD /* Controllers */,
 				0095C5D61F22F0ED001CB8AD /* Resources */,
+				0095C6001F236FFD001CB8AD /* UI */,
 				0095C5D71F22F10B001CB8AD /* SilhouetteView.swift */,
 			);
 			path = Silhouette;
@@ -134,9 +139,18 @@
 		0095C5FB1F22FFD2001CB8AD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0095C5FC1F230438001CB8AD /* ConfigureSheetController.swift */,
 				0095C5F91F22FFCC001CB8AD /* SilhouetteController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0095C6001F236FFD001CB8AD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0095C5FD1F230438001CB8AD /* ConfigureSheet.xib */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0095C5FF1F230438001CB8AD /* ConfigureSheet.xib in Resources */,
 				0095C5F81F22FA7D001CB8AD /* html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0095C5D81F22F10B001CB8AD /* SilhouetteView.swift in Sources */,
+				0095C5FE1F230438001CB8AD /* ConfigureSheetController.swift in Sources */,
 				0095C5FA1F22FFCC001CB8AD /* SilhouetteController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

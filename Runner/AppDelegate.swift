@@ -16,6 +16,11 @@ class AppDelegate: NSObject {
 
     var view: ScreenSaverView!
 
+    @IBAction func showPreferences(_ sender: NSObject!)
+    {
+        window.beginSheet(view.configureSheet()!, completionHandler: nil)
+    }
+
     func setupAndStartAnimation()
     {
         let saverName = UserDefaults.standard.string(forKey: "saver") ?? "Silhouette"
