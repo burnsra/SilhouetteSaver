@@ -6,15 +6,8 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		0095C5CB1F22F08E001CB8AD /* SilhouetteView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0095C5CA1F22F08E001CB8AD /* SilhouetteView.h */; };
-		0095C5CD1F22F08E001CB8AD /* SilhouetteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095C5CC1F22F08E001CB8AD /* SilhouetteView.m */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		0095C5C71F22F08E001CB8AD /* Silhouette.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Silhouette.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		0095C5CA1F22F08E001CB8AD /* SilhouetteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SilhouetteView.h; sourceTree = "<group>"; };
-		0095C5CC1F22F08E001CB8AD /* SilhouetteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SilhouetteView.m; sourceTree = "<group>"; };
 		0095C5CE1F22F08E001CB8AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,8 +41,6 @@
 		0095C5C91F22F08E001CB8AD /* Silhouette */ = {
 			isa = PBXGroup;
 			children = (
-				0095C5CA1F22F08E001CB8AD /* SilhouetteView.h */,
-				0095C5CC1F22F08E001CB8AD /* SilhouetteView.m */,
 				0095C5CE1F22F08E001CB8AD /* Info.plist */,
 			);
 			path = Silhouette;
@@ -62,7 +53,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0095C5CB1F22F08E001CB8AD /* SilhouetteView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +125,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0095C5CD1F22F08E001CB8AD /* SilhouetteView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
