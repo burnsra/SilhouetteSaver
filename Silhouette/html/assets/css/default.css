@@ -27,7 +27,6 @@ body {
 #container {
     height: 100%;
     width: auto;
-    background-color: #CECECE;
     -webkit-mask-image: url(../img/silhouette.png);
     -webkit-mask-position-x: center;
     -webkit-mask-position-y: center;
