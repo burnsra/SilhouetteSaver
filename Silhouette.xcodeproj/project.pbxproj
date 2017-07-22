@@ -15,6 +15,8 @@
 		0095C5FA1F22FFCC001CB8AD /* SilhouetteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095C5F91F22FFCC001CB8AD /* SilhouetteController.swift */; };
 		0095C5FE1F230438001CB8AD /* ConfigureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095C5FC1F230438001CB8AD /* ConfigureSheetController.swift */; };
 		0095C5FF1F230438001CB8AD /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0095C5FD1F230438001CB8AD /* ConfigureSheet.xib */; };
+		0095C6031F239817001CB8AD /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 0095C6011F239817001CB8AD /* thumbnail.png */; };
+		0095C6041F239817001CB8AD /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0095C6021F239817001CB8AD /* thumbnail@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		0095C5F91F22FFCC001CB8AD /* SilhouetteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilhouetteController.swift; sourceTree = "<group>"; };
 		0095C5FC1F230438001CB8AD /* ConfigureSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureSheetController.swift; sourceTree = "<group>"; };
 		0095C5FD1F230438001CB8AD /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
+		0095C6011F239817001CB8AD /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		0095C6021F239817001CB8AD /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				0095C5FD1F230438001CB8AD /* ConfigureSheet.xib */,
+				0095C6011F239817001CB8AD /* thumbnail.png */,
+				0095C6021F239817001CB8AD /* thumbnail@2x.png */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -249,7 +255,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0095C5FF1F230438001CB8AD /* ConfigureSheet.xib in Resources */,
+				0095C6041F239817001CB8AD /* thumbnail@2x.png in Resources */,
 				0095C5F81F22FA7D001CB8AD /* html in Resources */,
+				0095C6031F239817001CB8AD /* thumbnail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +480,7 @@
 				0095C5EF1F22F2B7001CB8AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
