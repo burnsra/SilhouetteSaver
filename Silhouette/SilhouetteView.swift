@@ -39,7 +39,8 @@ class SilhouetteView: ScreenSaverView {
 
     override func startAnimation() {
         super.startAnimation()
-        self.SilhouetteWebView.mainFrame.load(URLRequest(url: URL(string: "https://github.com/burnsra/SilhouetteSaver")!))
+        let url = String(format:"file://%@/html/index.html", Bundle(for: type(of: self)).resourcePath!).addingPercentEncoding(withAllowedCharacters: CharacterSet.urlPathAllowed)
+        self.SilhouetteWebView.mainFrame.load(URLRequest(url: URL(string: url!)!))
     }
 
     override func stopAnimation() {

@@ -1,0 +1,48 @@
+/* default.css */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+body {
+    background-color: #292B37;
+    color: #CECECE;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif !important;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
+    padding: 5%;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#container {
+    height: 100%;
+    width: auto;
+    background-color: #CECECE;
+    -webkit-mask-image: url(../img/silhouette.png);
+    -webkit-mask-position-x: center;
+    -webkit-mask-position-y: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+}
+
+.hidden {
+    visibility:hidden;
+}
+
+.text {
+    width: 11px;
+    height: 13px;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+}

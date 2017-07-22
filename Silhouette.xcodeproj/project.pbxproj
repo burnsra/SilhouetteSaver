@@ -11,6 +11,7 @@
 		0095C5DD1F22F1A0001CB8AD /* Silhouette.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0095C5C71F22F08E001CB8AD /* Silhouette.saver */; };
 		0095C5E51F22F2B7001CB8AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095C5E41F22F2B7001CB8AD /* AppDelegate.swift */; };
 		0095C5F21F22F2FE001CB8AD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0095C5F11F22F2FE001CB8AD /* MainMenu.xib */; };
+		0095C5F81F22FA7D001CB8AD /* html in Resources */ = {isa = PBXBuildFile; fileRef = 0095C5F71F22FA7D001CB8AD /* html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		0095C5E41F22F2B7001CB8AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0095C5ED1F22F2B7001CB8AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0095C5F11F22F2FE001CB8AD /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		0095C5F71F22FA7D001CB8AD /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		0095C5D61F22F0ED001CB8AD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0095C5F71F22FA7D001CB8AD /* html */,
 				0095C5CE1F22F08E001CB8AD /* Info.plist */,
 			);
 			name = Resources;
@@ -220,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0095C5F81F22FA7D001CB8AD /* html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
