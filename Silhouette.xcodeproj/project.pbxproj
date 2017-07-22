@@ -9,7 +9,19 @@
 /* Begin PBXBuildFile section */
 		0095C5D81F22F10B001CB8AD /* SilhouetteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095C5D71F22F10B001CB8AD /* SilhouetteView.swift */; };
 		0095C5DD1F22F1A0001CB8AD /* Silhouette.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0095C5C71F22F08E001CB8AD /* Silhouette.saver */; };
+		0095C5E51F22F2B7001CB8AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095C5E41F22F2B7001CB8AD /* AppDelegate.swift */; };
+		0095C5F21F22F2FE001CB8AD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0095C5F11F22F2FE001CB8AD /* MainMenu.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0095C5F31F22F372001CB8AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0095C5BE1F22F08E001CB8AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0095C5C61F22F08E001CB8AD;
+			remoteInfo = Silhouette;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0095C5DC1F22F194001CB8AD /* CopyFiles */ = {
@@ -28,10 +40,21 @@
 		0095C5C71F22F08E001CB8AD /* Silhouette.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Silhouette.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		0095C5CE1F22F08E001CB8AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0095C5D71F22F10B001CB8AD /* SilhouetteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilhouetteView.swift; sourceTree = "<group>"; };
+		0095C5E21F22F2B7001CB8AD /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0095C5E41F22F2B7001CB8AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0095C5ED1F22F2B7001CB8AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0095C5F11F22F2FE001CB8AD /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0095C5C31F22F08E001CB8AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0095C5DF1F22F2B7001CB8AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +67,7 @@
 		0095C5BD1F22F08E001CB8AD = {
 			isa = PBXGroup;
 			children = (
+				0095C5E31F22F2B7001CB8AD /* Runner */,
 				0095C5C91F22F08E001CB8AD /* Silhouette */,
 				0095C5C81F22F08E001CB8AD /* Products */,
 			);
@@ -53,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				0095C5C71F22F08E001CB8AD /* Silhouette.saver */,
+				0095C5E21F22F2B7001CB8AD /* Runner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +97,32 @@
 				0095C5CE1F22F08E001CB8AD /* Info.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		0095C5E31F22F2B7001CB8AD /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				0095C5F51F22F98D001CB8AD /* Resources */,
+				0095C5F61F22F99C001CB8AD /* UI */,
+				0095C5E41F22F2B7001CB8AD /* AppDelegate.swift */,
+			);
+			path = Runner;
+			sourceTree = "<group>";
+		};
+		0095C5F51F22F98D001CB8AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0095C5ED1F22F2B7001CB8AD /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0095C5F61F22F99C001CB8AD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0095C5F11F22F2FE001CB8AD /* MainMenu.xib */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,18 +157,41 @@
 			productReference = 0095C5C71F22F08E001CB8AD /* Silhouette.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
+		0095C5E11F22F2B7001CB8AD /* Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0095C5F01F22F2B7001CB8AD /* Build configuration list for PBXNativeTarget "Runner" */;
+			buildPhases = (
+				0095C5DE1F22F2B7001CB8AD /* Sources */,
+				0095C5DF1F22F2B7001CB8AD /* Frameworks */,
+				0095C5E01F22F2B7001CB8AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0095C5F41F22F372001CB8AD /* PBXTargetDependency */,
+			);
+			name = Runner;
+			productName = Runner;
+			productReference = 0095C5E21F22F2B7001CB8AD /* Runner.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0095C5BE1F22F08E001CB8AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Burns5;
 				TargetAttributes = {
 					0095C5C61F22F08E001CB8AD = {
 						CreatedOnToolsVersion = 8.3.3;
 						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					0095C5E11F22F2B7001CB8AD = {
+						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -128,6 +202,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 0095C5BD1F22F08E001CB8AD;
 			productRefGroup = 0095C5C81F22F08E001CB8AD /* Products */;
@@ -135,6 +210,7 @@
 			projectRoot = "";
 			targets = (
 				0095C5C61F22F08E001CB8AD /* Silhouette */,
+				0095C5E11F22F2B7001CB8AD /* Runner */,
 			);
 		};
 /* End PBXProject section */
@@ -144,6 +220,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0095C5E01F22F2B7001CB8AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0095C5F21F22F2FE001CB8AD /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +242,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0095C5DE1F22F2B7001CB8AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0095C5E51F22F2B7001CB8AD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0095C5F41F22F372001CB8AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0095C5C61F22F08E001CB8AD /* Silhouette */;
+			targetProxy = 0095C5F31F22F372001CB8AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0095C5CF1F22F08E001CB8AD /* Debug */ = {
@@ -283,6 +383,35 @@
 			};
 			name = Release;
 		};
+		0095C5EE1F22F2B7001CB8AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Runner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.macos.screensaver.Runner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0095C5EF1F22F2B7001CB8AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Runner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.macos.screensaver.Runner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -300,6 +429,15 @@
 			buildConfigurations = (
 				0095C5D21F22F08E001CB8AD /* Debug */,
 				0095C5D31F22F08E001CB8AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0095C5F01F22F2B7001CB8AD /* Build configuration list for PBXNativeTarget "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0095C5EE1F22F2B7001CB8AD /* Debug */,
+				0095C5EF1F22F2B7001CB8AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
