@@ -8,7 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		0095C5D81F22F10B001CB8AD /* SilhouetteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095C5D71F22F10B001CB8AD /* SilhouetteView.swift */; };
+		0095C5DD1F22F1A0001CB8AD /* Silhouette.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0095C5C71F22F08E001CB8AD /* Silhouette.saver */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0095C5DC1F22F194001CB8AD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Screen Savers";
+			dstSubfolderSpec = 0;
+			files = (
+				0095C5DD1F22F1A0001CB8AD /* Silhouette.saver in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0095C5C71F22F08E001CB8AD /* Silhouette.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Silhouette.saver; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +95,7 @@
 				0095C5C31F22F08E001CB8AD /* Frameworks */,
 				0095C5C41F22F08E001CB8AD /* Headers */,
 				0095C5C51F22F08E001CB8AD /* Resources */,
+				0095C5DC1F22F194001CB8AD /* CopyFiles */,
 			);
 			buildRules = (
 			);
