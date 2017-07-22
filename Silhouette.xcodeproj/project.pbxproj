@@ -41,9 +41,17 @@
 		0095C5C91F22F08E001CB8AD /* Silhouette */ = {
 			isa = PBXGroup;
 			children = (
-				0095C5CE1F22F08E001CB8AD /* Info.plist */,
+				0095C5D61F22F0ED001CB8AD /* Resources */,
 			);
 			path = Silhouette;
+			sourceTree = "<group>";
+		};
+		0095C5D61F22F0ED001CB8AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0095C5CE1F22F08E001CB8AD /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
