@@ -14,6 +14,8 @@ class SilhouetteView: ScreenSaverView {
 
     let SilhouetteWebView: WebView = WebView(frame: NSZeroRect)
 
+    var silhouetteController: SilhouetteController!
+
     fileprivate func initialize() {
         self.configureWebView()
         self.addSubview(self.SilhouetteWebView)
@@ -30,6 +32,7 @@ class SilhouetteView: ScreenSaverView {
 
     override init?(frame: NSRect, isPreview: Bool) {
         super.init(frame: frame, isPreview: isPreview)
+        self.silhouetteController = SilhouetteController.sharedInstance
         self.initialize()
     }
 
@@ -41,6 +44,7 @@ class SilhouetteView: ScreenSaverView {
         super.startAnimation()
         let url = String(format:"file://%@/html/index.html", Bundle(for: type(of: self)).resourcePath!).addingPercentEncoding(withAllowedCharacters: CharacterSet.urlPathAllowed)
         self.SilhouetteWebView.mainFrame.load(URLRequest(url: URL(string: url!)!))
+        self.SilhouetteWebView.mainFrame.reloadFromOrigin()
     }
 
     override func stopAnimation() {

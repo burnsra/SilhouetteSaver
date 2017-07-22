@@ -12,6 +12,7 @@
 		0095C5E51F22F2B7001CB8AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095C5E41F22F2B7001CB8AD /* AppDelegate.swift */; };
 		0095C5F21F22F2FE001CB8AD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0095C5F11F22F2FE001CB8AD /* MainMenu.xib */; };
 		0095C5F81F22FA7D001CB8AD /* html in Resources */ = {isa = PBXBuildFile; fileRef = 0095C5F71F22FA7D001CB8AD /* html */; };
+		0095C5FA1F22FFCC001CB8AD /* SilhouetteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095C5F91F22FFCC001CB8AD /* SilhouetteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		0095C5ED1F22F2B7001CB8AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0095C5F11F22F2FE001CB8AD /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		0095C5F71F22FA7D001CB8AD /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
+		0095C5F91F22FFCC001CB8AD /* SilhouetteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilhouetteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		0095C5C91F22F08E001CB8AD /* Silhouette */ = {
 			isa = PBXGroup;
 			children = (
+				0095C5FB1F22FFD2001CB8AD /* Controllers */,
 				0095C5D61F22F0ED001CB8AD /* Resources */,
 				0095C5D71F22F10B001CB8AD /* SilhouetteView.swift */,
 			);
@@ -126,6 +129,14 @@
 				0095C5F11F22F2FE001CB8AD /* MainMenu.xib */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		0095C5FB1F22FFD2001CB8AD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0095C5F91F22FFCC001CB8AD /* SilhouetteController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0095C5D81F22F10B001CB8AD /* SilhouetteView.swift in Sources */,
+				0095C5FA1F22FFCC001CB8AD /* SilhouetteController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
