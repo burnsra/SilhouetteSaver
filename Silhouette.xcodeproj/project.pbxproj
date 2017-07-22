@@ -6,9 +6,14 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0095C5D81F22F10B001CB8AD /* SilhouetteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095C5D71F22F10B001CB8AD /* SilhouetteView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		0095C5C71F22F08E001CB8AD /* Silhouette.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Silhouette.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		0095C5CE1F22F08E001CB8AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0095C5D71F22F10B001CB8AD /* SilhouetteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilhouetteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				0095C5D61F22F0ED001CB8AD /* Resources */,
+				0095C5D71F22F10B001CB8AD /* SilhouetteView.swift */,
 			);
 			path = Silhouette;
 			sourceTree = "<group>";
@@ -133,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0095C5D81F22F10B001CB8AD /* SilhouetteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
