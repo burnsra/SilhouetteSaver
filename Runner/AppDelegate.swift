@@ -34,7 +34,6 @@ class AppDelegate: NSObject {
         view = saverClass.init(frame: window.contentView!.frame, isPreview: false)
         view.autoresizingMask = [NSAutoresizingMaskOptions.viewWidthSizable, NSAutoresizingMaskOptions.viewHeightSizable]
 
-        window.backingType = saverClass.backingStoreType()
         window.title = view.className
         window.contentView!.autoresizesSubviews = true
         window.contentView!.addSubview(view)
