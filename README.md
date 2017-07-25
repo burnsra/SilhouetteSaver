@@ -2,9 +2,19 @@
 
 ## Overview
 
-**Silhouette** is a MacOS screen saver written in Swift
+**Silhouette** is a MacOS screen saver written in Swift.  It allows you to select any transparent PNG file and use it as the silhouette.
+
+## Examples
+
+Google | Kroger
+------------ | -------------
+<img style="max-width:100%;" src="./assets/example_google.png" /> | <img style="max-width:100%;" src="./assets/example_kroger.png" />
 
 ## Screenshots
+
+Screen Saver - Animation
+
+<img style="max-width:100%;" src="./assets/screen_saver_animation.gif" />
 
 System Preferences - Screen Saver
 
@@ -13,10 +23,6 @@ System Preferences - Screen Saver
 System Preferences - Screen Saver Options
 
 <img style="max-width:100%;" src="./assets/screen_saver_options.png" />
-
-Screen Saver - Animation
-
-<img style="max-width:100%;" src="./assets/screen_saver_animation.gif" />
 
 ## Contributions
 
