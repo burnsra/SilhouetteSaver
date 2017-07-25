@@ -24,6 +24,22 @@ System Preferences - Screen Saver Options
 
 <img style="max-width:100%;" src="./assets/screen_saver_options.png" />
 
+## Installation
+
+After you install homebrew-cask, run the following command:
+
+```sh
+$ brew tap burnsra/personal
+```
+
+You can now install the Silhouette saver cask.
+
+```sh
+$ brew cask install silhouette-saver
+```
+
+[Direct Downloads](https://www.robertburns.me/dist/silhouette-saver.zip)
+
 ## Contributions
 
 Do you want to improve the app or add any useful features? Please go ahead and create pull requests. I'm thankful for any help.
