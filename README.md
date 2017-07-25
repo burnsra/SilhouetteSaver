@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Silhouette** is a MacOS screen saver written in Swift.  It allows you to select any transparent PNG file and use it as the silhouette.
+**Silhouette** is a MacOS screen saver written in Swift, utilizing HTML/CSS/JS for the animation.  It allows you to select any transparent PNG file and use it as the silhouette.
 
 ## Examples
 
