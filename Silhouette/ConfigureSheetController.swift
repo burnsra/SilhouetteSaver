@@ -40,7 +40,9 @@ class ConfigureSheetController: NSObject {
     @IBAction func browseSilhouetteFile(_ sender: NSButton)
     {
         let custom_silhouette = selectSilhouetteFile()
-        silhouetteController.retrieveCustomSilhouette(custom_silhouette)
+        if (custom_silhouette != "") {
+            silhouetteController.retrieveCustomSilhouette(custom_silhouette)
+        }
         previewSilhouette()
     }
 
