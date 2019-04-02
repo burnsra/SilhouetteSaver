@@ -42,7 +42,7 @@ class SilhouetteView: ScreenSaverView {
 
     override func startAnimation() {
         super.startAnimation()
-        let url = String(format:"file://%@/html/index.html", Bundle(for: type(of: self)).resourcePath!).addingPercentEncoding(withAllowedCharacters: CharacterSet.urlPathAllowed)
+        let url = String(format:"%@/html/index.html", Bundle(for: type(of: self)).resourcePath!).addingPercentEncoding(withAllowedCharacters: CharacterSet.urlPathAllowed)
         self.SilhouetteWebView.mainFrame.load(URLRequest(url: URL(string: url!)!))
         self.SilhouetteWebView.mainFrame.reloadFromOrigin()
     }
@@ -58,13 +58,12 @@ class SilhouetteView: ScreenSaverView {
     override func animateOneFrame() {
     }
 
-    override func hasConfigureSheet() -> Bool {
+    override var hasConfigureSheet: Bool {
         return true
     }
 
-    override func configureSheet() -> NSWindow? {
-        let controller = ConfigureSheetController.sharedInstance
-        return controller.window
+    override var configureSheet: NSWindow? {
+        return ConfigureSheetController.sharedInstance.window
     }
 
 }

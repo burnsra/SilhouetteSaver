@@ -28,7 +28,7 @@ class ConfigureSheetController: NSObject {
 
     @IBAction func closeConfigureSheet(_ sender: NSButton)
     {
-        window.sheetParent!.endSheet(window, returnCode: (sender.tag == 1) ? NSModalResponseOK : NSModalResponseCancel)
+        window.sheetParent!.endSheet(window, returnCode: (sender.tag == 1) ? NSApplication.ModalResponse.OK : NSApplication.ModalResponse.cancel)
     }
 
     @IBAction func resetDefaults(_ sender: NSButton)
@@ -72,7 +72,7 @@ class ConfigureSheetController: NSObject {
             path = ""
         }
 
-        if (i == NSModalResponseOK) {
+        if (i == NSApplication.ModalResponse.OK) {
             return path
         } else {
             return ""

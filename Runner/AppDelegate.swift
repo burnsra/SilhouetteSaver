@@ -18,7 +18,7 @@ class AppDelegate: NSObject {
 
     @IBAction func showPreferences(_ sender: NSObject!)
     {
-        window.beginSheet(view.configureSheet()!, completionHandler: nil)
+        window.beginSheet(view.configureSheet!, completionHandler: nil)
     }
 
     func setupAndStartAnimation()
@@ -32,7 +32,7 @@ class AppDelegate: NSObject {
         let saverClass = saverBundle.principalClass! as! ScreenSaverView.Type
 
         view = saverClass.init(frame: window.contentView!.frame, isPreview: false)
-        view.autoresizingMask = [NSAutoresizingMaskOptions.viewWidthSizable, NSAutoresizingMaskOptions.viewHeightSizable]
+        view.autoresizingMask = [NSView.AutoresizingMask.width, NSView.AutoresizingMask.height]
 
         window.title = view.className
         window.contentView!.autoresizesSubviews = true
@@ -83,7 +83,7 @@ extension AppDelegate: NSWindowDelegate
 {
     override func awakeFromNib() {
         super.awakeFromNib()
-        let screenSize = NSScreen.main()!.frame
+        let screenSize = NSScreen.main!.frame
         let percent = CGFloat(0.50)
         let offset: CGFloat = CGFloat((1.0 - percent) / 2.0)
 
@@ -97,7 +97,7 @@ extension AppDelegate: NSWindowDelegate
 
     func windowWillClose(_ notification: Notification)
     {
-        NSApplication.shared().terminate(window)
+        NSApplication.shared.terminate(window)
     }
 
     func windowDidResize(_ notification: Notification)
